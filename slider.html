@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="menu-button">MENU</button>
+    </nav>
+    <div class="slider background" data-background ></div>
+        <div class="slider frontground">
+        <div class="information">
+          <div class="circles">
+            <div class="circle" data-circle1></div>
+            <div class="circle" data-circle2></div>
+            <div class="circle" data-circle3></div>
+          </div>
+          <h1 class="headline" data-headline></h1>
+          <p class="under-headline" data-under-headline></p>
+          <p class="progress-box" ><progress class="progress" data-progress-box></p>
+          <article class="content" data-content></article>
+          <div class="buttons">
+            <button class="button-lorem">LOREM IPSUM</button>
+            <button class="button-dolor">DOLOR SIT AMET</button>
+          </div>
+          <div class="bottom-text">Lorem ipsum dolor sit amet</div>
+        </div>
+      </div>
+    </div>
+    <script src="slider.js"></script>
+    <script>
+      const slider = new Slider();
+
+      slider.initializeSlider();
+
+      setInterval(function() {
+        slider.changepercentOfProgresBox();
+      }, 5);
+    </script>
+  </body>
+</html>

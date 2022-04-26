@@ -1,0 +1,162 @@
+:root {
+    box-sizing: border-box;
+    color: white;
+  }
+
+  * ::before ::after {
+    box-sizing: inherit;
+  }
+
+.navbar {
+    background: rgb(238, 236, 236);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    background: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(220, 220, 221);
+    border: none;
+    height: 70px;
+    width: 100%;
+}
+
+.menu-button:hover {
+    background-color: rgb(206, 209, 208);
+}
+
+.slider {
+    height: 80vh;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+}
+
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-proprty: all;
+    transition: 2s;
+}
+
+.background .frontground {
+    background-color: rgb(0, 0, 0, 0.4);
+    font-family: DejaVu Sans Mono, monospace; 	
+}
+
+.circles {
+    margin-left: 12%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.circles::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.circles .circle {
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+}
+
+.circles .bolder-circle {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+}
+
+.headline {
+    margin-top: -1px;
+    margin-left: 12%;
+    font-size: 5vh;
+}
+
+.under-headline {
+    margin-left: 14%;
+    font-size: 2.5vh;
+    font-weight: 10;
+    margin-top: -4vh;
+}
+
+.progress-box {
+    margin-left: 12%;
+}
+
+.progress-box .progress {
+    width: 40vmin;
+}
+
+.content {
+    margin-left: 12%;
+    width: 80vmin;
+    height: 20vmin;
+    overflow-y: hidden;
+}
+
+.buttons {
+    margin-left: 12%;
+    margin-top: 3rem;
+}
+
+.buttons .button-lorem {
+    background-color: rgb(66, 147, 74);
+    color: white;
+    font-size: 0.8rem;
+    top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 190px;
+}
+
+.buttons .button-lorem:hover {
+    background-color: green;
+}
+
+.buttons .button-dolor {
+    background: none;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: white;
+    border: 3px solid rgb(66, 147, 74);
+    border-radius: 10px;
+    height: 50px;
+    width: 210px;
+}
+
+.buttons .button-dolor:hover {
+    background-color: green;
+    border-color: green;
+}
+
+.bottom-text {
+    height: 4rem;
+    left: 5%;
+    opacity: 1;
+    padding-left: 1rem;
+    border-left: 2px solid rgb(225, 229, 11);
+    position: absolute;
+    bottom: -2rem;
+}
