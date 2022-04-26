@@ -50,8 +50,7 @@ class Slider {
         this.content.textContent = this.contents[this.numberOfSlide];
     }
 
-    changeParamenters() { 
-        console.log(this.numberOfSlide);
+    changeParamenters() {
         if(this.numberOfSlide < 2) {
             this.numberOfSlide++;
         }
