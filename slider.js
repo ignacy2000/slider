@@ -40,8 +40,8 @@ class Slider {
         this.circleList = [this.circle1, this.circle2, this.circle3];
 
         this.background.style.backgroundImage = `url('${this.images[this.numberOfSlide]}')`;
-        for(this.i=0; this.i<3; this.i++) {
-            this.circleList[this.i].classList.remove('bolder-circle');
+        for(let i=0; i<3; i++) {
+            this.circleList[i].classList.remove('bolder-circle');
         }
         this.circleList[this.numberOfSlide].classList.add('bolder-circle');
         this.headline.textContent = this.headlines[this.numberOfSlide];
